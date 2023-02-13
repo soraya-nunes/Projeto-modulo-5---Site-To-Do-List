@@ -1,0 +1,65 @@
+<h1 class="d-flex justify-content-center mb-5 mt-4">Faça já seu cadastro.</h1>
+<form id="cad" action="/register" method="POST" class="form row g-3 needs-validation" novalidate>
+  <div class="col-md-6">
+    <label for="text" class="form-label" >Nome</label>
+    <input type="text" class="form-control" id="nome" name="name" required>
+    <div class="valid-feedback">
+      !
+    </div>
+  </div>
+
+ <div class="col-md-6">
+    <label for="email" class="form-label" >Email</label>
+    <input type="email" class="form-control" id="email" name="email" required>
+    <div class="valid-feedback">
+      !
+    </div>
+  </div>
+
+
+  <div class="col-md-6">
+    <label for="password" class="form-label">Senha</label>
+    <input type="password" name="password" class="form-control" id="password" name="password" required>
+
+
+  
+    <div class="invalid-feedback">
+      Escolha uma senha.
+    </div>
+  </div>
+
+    <div class="col-md-6">
+    <label for="password" class="form-label">Confirma Senha</label>
+    <input type="password" name="confirmpassword" class="form-control" id="confirmpassword" name="confirmpassword" required>
+
+
+  
+    <div class="invalid-feedback">
+      Escolha uma senha.
+    </div>
+  </div>
+
+  
+  <div class="col-12">
+    <button class="btn btn-success" type="submit" value="Cadastrar">Cadastrar</button>
+    <p>Já tem conta? <a href="/login">Clique aqui</a></p>
+  </div>
+</form>
+
+<script>
+    
+(function () {
+  'use strict'
+  var forms = document.querySelectorAll('.needs-validation')
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+</script>

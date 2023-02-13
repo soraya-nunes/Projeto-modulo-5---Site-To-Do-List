@@ -1,0 +1,228 @@
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*config titulo*/
+
+.titulo a span h1{
+    font-family: 'Oleo Script', cursive;
+}
+
+.mag{
+    margin-top: 7em;
+}
+
+.borda h1{
+    text-align: center;
+}
+.borda h4{
+    text-align: center;
+    font-family: 'Oleo Script', cursive;
+}
+
+.borda{
+    border-bottom: 10px solid #283F75;
+    border-radius: 10px;
+    margin-bottom: 5em;
+}
+
+/* NavBar*/
+.icone{
+    color: #ffa500;
+}
+
+
+.menu1{
+    display: block;
+    font-size: large;
+}
+
+/* Home */
+
+.imgbloco img{
+   border-radius: 20px;
+}
+
+.listagemain{
+    padding: 5px;
+    text-align: start;
+   
+}
+
+.listagemain ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+.listagemain ul li{
+    font-family:'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Botão home */ 
+
+.botao-home{
+    background: #B26132;
+    font-family:'Roboto', sans-serif;
+    font-weight: 200;
+    border: none;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 100%;
+    height: 42px;
+    transition: background 500ms, color 500ms;
+}
+
+.botao-home:hover{
+    background: transparent;
+    border: 2px solid #700276;
+    color: #700276;
+
+}
+
+
+
+/* LOGIN */
+
+
+.formulario-login{
+    width: 100%;
+    text-align: center;
+    background: rgba(183, 0, 255, 0.199);
+    border-radius: 10px;
+    box-shadow: 1.345rem 1.58em 1.5em rgb(54, 54, 54);
+    position: relative;
+}
+
+.formulario-login h1{
+    color: #000; 
+    margin-bottom: 1em 2em;
+    padding: 20px;
+}
+.formulario-login p{
+    color: #000; 
+    margin-top: 24px;
+}
+.formulario-login label{
+    color: #000; 
+    margin-top: 24px;
+    font-weight: 640;
+}
+
+.input-contato {
+    border: 2px solid #000;
+    border-radius: 10px;
+    width: 60%;
+    margin: 10px; 
+    height: 2.5em;
+    padding: 7px;
+    position: relative;
+    outline: 0;
+}
+
+#area-input{
+    position: relative;
+}
+
+#area-input label{
+    font-size: 16px;
+    position: absolute;
+    left: 4em;
+    cursor: text;
+    color: rgb(116, 116, 116);;
+} 
+
+#area-input > label{
+    position: absolute;
+    left: 8em;
+    top: -7px;
+    transition: top 400ms, font 400ms;
+}
+
+#area-input > .input-contato:focus ~ label,
+.input-contato:valid ~ label{
+    font-size: 13px;
+    transform: translateY(-28px);
+    color: #283F75;}
+
+#msg{
+    height: 5em;
+}
+
+#switch p{
+    width: 50%;
+    text-align: left;
+    font-weight: 600;
+}
+
+#switch{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1em 0px;
+}
+
+#switch label{
+    display: flex;
+    flex-direction: row;
+
+}
+
+#switch input[type="checkbox"]{
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background-color: #283F75;
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 16px 1px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+    margin-right: 5px;
+}
+
+#switch input:checked[type="checkbox"]{
+    background-color: #64ff6a;
+}
+
+#switch input[type="checkbox"]::before{
+    content:'';
+    width: 20px;
+    height: 20px;
+    background-color: #EDF3F1;
+    position: absolute;
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px 1px  rgba(0, 0, 0, 0.26);
+    transform: scale(1.1);
+    top: 0px;
+    left: 1.2px;
+    transition: 0.5s;
+}
+
+#switch input:checked[type="checkbox"]::before{
+    left: 19px;
+}
+
+.login-btn{
+    background: #B26132;
+    font-family:'Roboto', sans-serif;
+    font-weight: 200;
+    border: none;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 40%;
+    height: 42px;
+    transition: background 500ms, color 500ms;
+    margin-bottom: 2em;
+}
